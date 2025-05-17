@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 style="text-align:center;">Product Catalog</h1>
+  <div class="product-list">
+
+    <!-- Product Card -->
+    <div class="product-card" data-id="1" data-name="New Balance Sneakers" data-price="3000">
+      <img src="https://assets.ajio.com/medias/sys_master/root/20240704/DBdo/668727ac6f60443f3170a5be/-473Wx593H-469633852-green-MODEL.jpg" alt="Sneakers" />
+      <h2>New Balance Sneakers</h2>
+      <p>Comfortable and trendy sneakers for everyday wear.</p>
+      <p class="price">Rs.3000</p>
+      <label>Quantity:</label>
+      <input type="number" class="quantity" value="1" min="1" />
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card" data-id="2" data-name="Running Shoes" data-price="1200">
+      <img src="https://abrosshoes.com/cdn/shop/products/000A2350.jpg?v=1737964290&width=2048" alt="Running Shoes" />
+      <h2>Running Shoes</h2>
+      <p>Lightweight shoes for running and gym workouts.</p>
+      <p class="price">Rs.1200</p>
+      <label>Quantity:</label>
+      <input type="number" class="quantity" value="1" min="1" />
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card" data-id="3" data-name="Sports Socks" data-price="150">
+      <img src="https://img.shopstyle-cdn.com/sim/48/c7/48c795a058f98a9936cdd3b093d780b4_xlarge/decathlon-mid-sports-socks-rs-500-tri-pack.jpg" alt="Sport Socks" />
+      <h2>Sport Socks</h2>
+      <p>Breathable, sweat-wicking socks for workouts and sports.</p>
+      <p class="price">Rs.150</p>
+      <label>Quantity:</label>
+      <input type="number" class="quantity" value="1" min="1" />
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card" data-id="4" data-name="Fitness Tracker" data-price="2500">
+      <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Fitness Tracker" />
+      <h2>Fitness Tracker</h2>
+      <p>Track your steps, sleep, and workouts daily.</p>
+      <p class="price">Rs.2500</p>
+      <label>Quantity:</label>
+      <input type="number" class="quantity" value="1" min="1" />
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <div class="cart-message" id="cartMessage"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
